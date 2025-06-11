@@ -488,10 +488,10 @@
       </td>
       <td>
         <b>Q.45</b> <br>
-        RW1 <br>
-        RW2 RW2 <br>
-        RW3 RW3 RW3 <br>
-        RW4 RW4 RW4 RW4 <br>
+        HP1 <br>
+        HP2 HP2 <br>
+        HP3 HP3 HP3 <br>
+        HP4 HP4 HP4 HP4 <br>
       </td>
     </tr>
     <tr>
