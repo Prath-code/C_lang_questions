@@ -321,6 +321,7 @@ for (int i = 1; i <= 5; i++) {
 
 ---
 
+
 # Array
 
 ## Question 1: What is Array? Explain its types.
@@ -812,3 +813,995 @@ for (int i = 0; i < 5; i++) {
 ```
 
 ---
+
+
+# Patterns
+
+## Question 1: Print the following pattern:
+```
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= 5; j++) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 2: Print the following pattern:
+```
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 3: Print the following pattern:
+```
+5
+5 4
+5 4 3
+5 4 3 2
+5 4 3 2 1
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 5; j >= i; j--) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 4: Print the following pattern:
+```
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 5: Print the following pattern:
+```
+5 4 3 2 1
+5 4 3 2
+5 4 3
+5 4
+5
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 5; j >= 6 - i; j--) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 6: Print the following pattern:
+```
+A B C D E
+A B C D
+A B C
+A B
+A
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (char c = 'A'; c <= ch; c++) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 7: Print the following pattern:
+```
+A B C D E
+B C D E
+C D E
+D E
+E
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (char c = ch; c <= 'E'; c++) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 8: Print the following pattern:
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+**Answer**:
+```c
+for (int i = 1; i <= 9; i += 2) {
+    for (int j = i; j < 9; j += 2) {
+        printf(" ");
+    }
+    for (int j = 1; j <= i; j++) {
+        printf("*");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 9: Print the following pattern:
+```
+*********
+ *******
+  *****
+   ***
+    *
+```
+**Answer**:
+```c
+for (int i = 9; i >= 1; i -= 2) {
+    for (int j = i; j < 9; j += 2) {
+        printf(" ");
+    }
+    for (int j = 1; j <= i; j++) {
+        printf("*");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 10: Print the following pattern:
+```
+    *
+   ***
+  *****
+ *******
+// ...continue adding all 50 questions and answers in a similar format...
+```
+
+## Question 11: Print the following pattern:
+```
+5 5 5 5 5
+5 5 5 5
+5 5 5
+5 5
+5
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("5 ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 12: Print the following pattern:
+```
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 13: Print the following pattern:
+```
+5
+4 4
+3 3 3
+2 2 2 2
+1 1 1 1 1
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= 6 - i; j++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 14: Print the following pattern:
+```
+1 1 1 1 1
+2 2 2 2
+3 3 3
+4 4
+5
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 5; j >= i; j--) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 15: Print the following pattern:
+```
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
+1
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 16: Print the following pattern:
+```
+A A A A A
+B B B B B
+C C C C C
+D D D D D
+E E E E E
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (int j = 1; j <= 5; j++) {
+        printf("%c ", ch);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 17: Print the following pattern:
+```
+A
+A B
+A B C
+A B C D
+A B C D E
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (char c = 'A'; c <= ch; c++) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 18: Print the following pattern:
+```
+E
+E D
+E D C
+E D C B
+E D C B A
+```
+**Answer**:
+```c
+for (char ch = 'E'; ch >= 'A'; ch--) {
+    for (char c = 'E'; c >= ch; c--) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 19: Print the following pattern:
+```
+A B C D E
+A B C D
+A B C
+A B
+A
+```
+**Answer**:
+```c
+for (char ch = 'E'; ch >= 'A'; ch--) {
+    for (char c = 'A'; c <= ch; c++) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 20: Print the following pattern:
+```
+E D C B A
+D C B A
+C B A
+B A
+A
+```
+**Answer**:
+```c
+for (char ch = 'E'; ch >= 'A'; ch--) {
+    for (char c = 'E'; c >= ch; c--) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 21: Print the following pattern:
+```
+A B C D E
+B C D E
+C D E
+D E
+E
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (char c = ch; c <= 'E'; c++) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 22: Print the following pattern:
+```
+E D C B A
+D C B A
+C B A
+B A
+A
+```
+**Answer**:
+```c
+for (char ch = 'E'; ch >= 'A'; ch--) {
+    for (char c = 'E'; c >= ch; c--) {
+        printf("%c ", c);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 23: Print the following pattern:
+```
+A
+A A
+A A A
+A A A A
+A A A A A
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("A ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 24: Print the following pattern:
+```
+E
+E E
+E E E
+E E E E
+E E E E E
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("E ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 25: Print the following pattern:
+```
+A A A A A
+A A A A
+A A A
+A A
+A
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("A ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 26: Print the following pattern:
+```
+E E E E E
+E E E E
+E E E
+E E
+E
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("E ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 27: Print the following pattern:
+```
+A
+B B
+C C C
+D D D D
+E E E E E
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (int j = 1; j <= ch - 'A' + 1; j++) {
+        printf("%c ", ch);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 28: Print the following pattern:
+```
+E
+D D
+C C C
+B B B B
+A A A A A
+```
+**Answer**:
+```c
+for (char ch = 'E'; ch >= 'A'; ch--) {
+    for (int j = 1; j <= 'E' - ch + 1; j++) {
+        printf("%c ", ch);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 29: Print the following pattern:
+```
+A A A A A
+B B B B
+C C C
+D D
+E
+```
+**Answer**:
+```c
+for (char ch = 'A'; ch <= 'E'; ch++) {
+    for (int j = 5; j >= ch - 'A' + 1; j--) {
+        printf("%c ", ch);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 30: Print the following pattern:
+```
+E E E E E
+D D D D
+C C C
+B B
+A
+```
+**Answer**:
+```c
+for (char ch = 'E'; ch >= 'A'; ch--) {
+    for (int j = 1; j <= ch - 'A' + 1; j++) {
+        printf("%c ", ch);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 31: Print the following pattern:
+```
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= 5; j++) {
+        printf("* ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 32: Print the following pattern:
+```
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("* ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 33: Print the following pattern:
+```
+* * * * *
+* * * *
+* * *
+* *
+*
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("* ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 34: Print the following pattern:
+```
+1 2 3 4 5
+6 7 8 9 10
+11 12 13 14 15
+16 17 18 19 20
+21 22 23 24 25
+```
+**Answer**:
+```c
+int count = 1;
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= 5; j++) {
+        printf("%d ", count++);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 35: Print the following pattern:
+```
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 36: Print the following pattern:
+```
+5
+4 4
+3 3 3
+2 2 2 2
+1 1 1 1 1
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= 6 - i; j++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 37: Print the following pattern:
+```
+1 1 1 1 1
+2 2 2 2
+3 3 3
+4 4
+5
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 5; j >= i; j--) {
+        printf("%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 38: Print the following pattern:
+```
+A
+A A
+A A A
+A A A A
+A A A A A
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("A ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 39: Print the following pattern:
+```
+A A A A A
+A A A A
+A A A
+A A
+A
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("A ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 40: Print the following pattern:
+```
++
++ -
++ - +
++ - + -
++ - + - +
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf(i % 2 == 0 ? "- " : "+ ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 41: Print the following pattern:
+```
++
+- -
++ + +
+- - - -
++ + + + +
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf(i % 2 == 0 ? "- " : "+ ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 42: Print the following pattern:
+```
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", (i + j) % 2);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 43: Print the following pattern:
+```
+0 1 0 1 0
+1 0 1 0
+0 1 0
+1 0
+0
+```
+**Answer**:
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", (i + j) % 2);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 44: Print the following pattern:
+```
+@
+# #
+@ @ @
+# # # #
+@ @ @ @ @
+```
+**Answer**:
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf(i % 2 == 0 ? "# " : "@ ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 45: Print the following pattern:
+```
+HP1
+HP2 HP2
+HP3 HP3 HP3
+HP4 HP4 HP4 HP4
+```
+**Answer**:
+```c
+for (int i = 1; i <= 4; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("HP%d ", i);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 46: Print the following pattern:
+```
+D P D P D P D P
+D P D P D P
+D P D P
+D P
+```
+**Answer**:
+```c
+for (int i = 4; i >= 1; i--) {
+    for (int j = 1; j <= i * 2; j++) {
+        printf(j % 2 == 0 ? "P " : "D ");
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 47: Print the following pattern:
+```
+1
+2 3
+4 5 6
+7 8 9 10
+```
+**Answer**:
+```c
+int count = 1;
+for (int i = 1; i <= 4; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", count++);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 48: Print the following pattern:
+```
+1
+2 4
+3 6 9
+4 8 12 16
+```
+**Answer**:
+```c
+for (int i = 1; i <= 4; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", i * j);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 49: Print the following pattern:
+```
+1
+1 0
+1 0 1
+1 0 1 0
+```
+**Answer**:
+```c
+for (int i = 1; i <= 4; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("%d ", j % 2);
+    }
+    printf("\n");
+}
+```
+
+---
+
+## Question 50: Print the following pattern:
+```
+*
+* *
+* * *
+* * * *
+```
+**Answer**:
+```c
+for (int i = 1; i <= 4; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("* ");
+    }
+    printf("\n");
+}
+```
