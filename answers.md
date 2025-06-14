@@ -110,7 +110,7 @@ int 1age = 30; // Invalid
 **Answer**:  
 Operators are symbols used to perform operations on variables and values. Types of operators include:
 - Arithmetic Operators: `+`, `-`, `*`, `/`, `%`
-- Relational Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Comparison Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
 - Logical Operators: `&&`, `||`, `!`
 - Bitwise Operators: `&`, `|`, `^`, `~`, `<<`, `>>`
 - Assignment Operators: `=`, `+=`, `-=`, etc.
@@ -137,6 +137,13 @@ int num = 10;
 double result = (double)num / 3;  // Explicit type casting
 ```
 Here, `num` is cast to `double` before division.
+
+Type Conversion is the automatic conversion of one data type to another by the compiler. For example:
+```c
+int num = 10;
+double result = num / 3;  // Implicit type conversion
+```
+Here, `num` is automatically converted to `double` during the division operation.
 
 ---
 
